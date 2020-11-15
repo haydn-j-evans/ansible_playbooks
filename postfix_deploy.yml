@@ -2,6 +2,8 @@
 - 
   hosts: all
   name: "Deploy Postfix"
+  environment:
+    PYTHONPATH: "/home/path/.local/lib/python2.7/site-packages"
   tasks: 
     - 
       docker_container: 
