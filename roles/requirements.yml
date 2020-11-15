@@ -1,2 +1,2 @@
-# from Ansible
-- src: https://galaxy.ansible.com/avinetworks/docker
+# from Github
+- src: https://github.com/avinetworks/ansible-role-docker
