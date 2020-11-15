@@ -13,6 +13,4 @@
         ports: 
           - "587:587"
         pull: yes
-        state: reloaded
-      name: "Create a Docker Container"
 
