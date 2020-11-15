@@ -3,4 +3,6 @@
   
   gather_facts: true
 
-- role: avinetworks.docker
+  roles:
+  - role: avinetworks.docker
+  
