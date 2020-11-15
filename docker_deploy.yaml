@@ -1,0 +1,13 @@
+---
+tasks:
+- name: Create a Docker Container
+docker_container:
+    name: postfix
+    image: boky/postfix
+    state: reloaded
+    pull: always
+    ports:
+    - "587:587"
+    env:
+      MYNETWORKS: 192.168.178.0/24
+      ALLOWED_SENDER_DOMAINS: "example.com example.org"
