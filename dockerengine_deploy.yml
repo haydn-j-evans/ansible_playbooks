@@ -4,4 +4,4 @@
   gather_facts: true
   
   roles:
-    - ansible-role-docker-ce-centos
+    - ansible-role-docker
