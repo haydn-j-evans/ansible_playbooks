@@ -12,7 +12,7 @@
         name: postfix
         ports: 
           - "587:587"
-        pull: always
+        pull: yes
         state: reloaded
       name: "Create a Docker Container"
 
