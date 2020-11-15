@@ -5,16 +5,11 @@
   tasks:
     - name: Install required system packages
       yum: name={{ item }} state=latest update_cache=yes
-      loop: [ 'ca-certificates', 'curl', 'python3-pip', 'python3-setuptools', 'python']
+      loop: [ 'ca-certificates', 'curl', 'python3-pip', 'python3-setuptools', 'python-virtualenv']
       
     - name: Install Docker Module for Python
       pip:
         name: docker
-        
-    - name: Pull default Docker image
-      docker_image:
-        name: "{{ default_container_image }}"
-        source: pull
         
     - name: Pull postfix container from Docker Hub and Deploy
       docker_container: 
