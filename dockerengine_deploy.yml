@@ -1,8 +1,5 @@
 ---
 - hosts: all
-  
-  gather_facts: true
-
   roles:
-  - role: avinetworks.docker
+    - role: avinetworks.docker
   
