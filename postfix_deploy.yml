@@ -5,7 +5,7 @@
   tasks:
     - name: Install required system packages
       yum: name={{ item }} state=latest update_cache=yes
-      loop: [ 'ca-certificates', 'curl', 'python3-pip', 'virtualenv', 'python3-setuptools']
+      loop: [ 'ca-certificates', 'curl', 'python3-pip', 'python3-setuptools']
       
     - name: Install Docker Module for Python
       pip:
