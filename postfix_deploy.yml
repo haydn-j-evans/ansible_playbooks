@@ -4,8 +4,16 @@
   name: "Deploy Postfix"
   environment:
     PYTHONPATH: "/home/path/.local/lib/python2.7/site-packages"
-  tasks: 
-    - 
+  tasks:
+    - name: Install required system packages
+      yum: name={{ item }} state=latest update_cache=yes
+      loop: [ 'apt-transport-https', 'ca-certificates', 'curl', 'software-properties-common', 'python3-pip', 'virtualenv', 'python3-setuptools']
+      
+  ,- name: Install Docker Module for Python
+      pip:
+        name: docker
+        
+    - name: Pull postfix container from Docker Hub and Deploy
       docker_container: 
         env: 
           ALLOWED_SENDER_DOMAINS: "example.com example.org"
