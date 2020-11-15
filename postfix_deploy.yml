@@ -1,4 +1,7 @@
 ---
+- name: Deploy Postfix
+hosts: all
+
 tasks:
 - name: Create a Docker Container
 docker_container:
