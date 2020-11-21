@@ -1,3 +1,6 @@
 # from Github
 - src: https://github.com/avinetworks/ansible-role-docker
   name: avinetworks.docker
+
+- src: https://galaxy.ansible.com/community/kubernetes
+  name: community.kubernetes
