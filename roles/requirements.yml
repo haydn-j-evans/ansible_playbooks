@@ -4,8 +4,8 @@
 
 # from Ansible Galaxy
 
-- src: https://galaxy.ansible.com/community/kubernetes
-  name: community.kubernetes
-
-- src: https://galaxy.ansible.com/community/general
-  name: community.general
+collections:
+  - name: community.kubernetes
+    version: 1.1.1
+  -name: community.general
+    version: 1.2.0
