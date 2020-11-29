@@ -7,6 +7,9 @@ roles:
   name: ansible-community.ansible-vault
   scm: git
   version: master
+  
+- src: https://github.com/dev-sec/ansible-collection-hardening
+  name: dev-sec.os-hardening
 
 # from Ansible Galaxy
 
